@@ -1,0 +1,90 @@
+@import url("https://fonts.cdnfonts.com/css/aileron");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  vertical-align: middle;
+  margin-right: 50px;
+  align-items: center;
+  height: 90px;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-family: "Aileron", sans-serif;
+  font-size: xxx-large;
+  font-weight: 900;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  text-align: justify;
+  color: var(--secondary-color);
+}
+
+img {
+  width: 30px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  height: 30px;
+  color: black;
+  border: 0;
+}
+
+#language-en {
+  background-color: gray;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0 5px 5px 0;
+}
+
+#language-cs {
+  cursor: pointer;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px 0 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    width: 80%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
